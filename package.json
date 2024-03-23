@@ -1,0 +1,64 @@
+{
+  "name": "laborumqui",
+  "engines": {
+    "node": ">=6.12"
+  },
+  "workspaces": [
+    "packages/*",
+    "contracts/*"
+  ],
+  "config": {
+    "contractsPackages": "@0x/contracts-asset-proxy @0x/contracts-dev-utils @0x/contracts-erc20 @0x/contracts-erc20-bridge-sampler @0x/contracts-erc721 @0x/contracts-erc1155 @0x/contracts-exchange @0x/contracts-exchange-forwarder @0x/contracts-exchange-libs @0x/contracts-integrations @0x/contracts-multisig @0x/contracts-staking @0x/contracts-test-utils @0x/contracts-utils @0x/contracts-coordinator @0x/contracts-erc20-bridge-sampler @0x/contracts-broker",
+    "mnemonic": "concert load couple harbor equip island argue ramp clarify fence smart topic",
+    "packagesWithDocPages": "0x.js @0x/contract-wrappers @0x/connect @0x/json-schemas @0x/subproviders @0x/web3-wrapper @0x/order-utils @0x/sol-compiler @0x/sol-coverage @0x/sol-profiler @0x/sol-trace @0x/dev-utils @0x/asset-swapper @0x/migrations @0x/orderbook @0x/contracts-asset-proxy @0x/contracts-coordinator @0x/contracts-dev-utils @0x/contracts-erc20 @0x/contracts-erc721 @0x/contracts-erc1155 @0x/contracts-exchange @0x/contracts-exchange-forwarder @0x/contracts-exchange-libs @0x/contracts-extensions @0x/contracts-staking",
+    "ignoreDependencyVersions": "@types/styled-components @types/node",
+    "ignoreDependencyVersionsForPackage": "instant contract-wrappers"
+  },
+  "bundlewatch": {
+    "files": [
+      {
+        "path": "packages/0x.js/_bundles/index.min.js",
+        "maxSize": "1300kB"
+      },
+      {
+        "path": "packages/instant/umd/v3/instant.js",
+        "maxSize": "2100kB"
+      }
+    ],
+    "ci": {
+      "trackBranches": [
+        "master",
+        "development"
+      ],
+      "repoBranchBase": "development"
+    }
+  },
+  "devDependencies": {
+    "@0x-lerna-fork/lerna": "3.16.10",
+    "@0xproject/npm-cli-login": "^0.0.11",
+    "async-child-process": "^1.1.1",
+    "bundlewatch": "^0.2.1",
+    "coveralls": "^3.0.0",
+    "ganache-cli": "6.8.0-istanbul.0",
+    "lcov-result-merger": "^3.0.0",
+    "lerna": "^3.0.0-beta.25",
+    "npm-run-all": "^4.1.2",
+    "prettier": "^1.16.3",
+    "source-map-support": "^0.5.6",
+    "typescript": "3.0.1",
+    "wsrun": "^2.2.0"
+  },
+  "resolutions": {
+    "merkle-patricia-tree": "^2.3.2"
+  },
+  "author": "AlfonsoHirthe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EvertHegmann/laborumqui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EvertHegmann/laborumqui.git/issues"
+  },
+  "homepage": "https://github.com/EvertHegmann/laborumqui.git",
+  "version": "1.0.0"
+}
